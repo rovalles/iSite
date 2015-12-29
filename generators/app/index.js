@@ -13,18 +13,32 @@ module.exports = yeoman.generators.Base.extend({
     // Have Yeoman greet the user.
     console.log(this.yeoman);
 
-    var prompts = [{
-      type: 'string',
-      name: 'appName',
-      message: 'What would you like to call the app?',
-      default: 'myApp'
-    },
-    {
-      type: 'string',
-      name: 'projectName',
-      message: 'What would like to title this application?',
-      default: 'App Name'
-    }];
+    var prompts = [
+        {
+          type: 'string',
+          name: 'appName',
+          message: 'What would you like to call the app?',
+          default: 'myApp'
+        },
+        {
+          type: 'string',
+          name: 'projectName',
+          message: 'What would like to title this application?',
+          default: 'App Name'
+        },
+        {
+          type: 'string',
+          name: 'appUser',
+          message: 'Who are you?',
+          default: 'User'
+        },
+        {
+          type: 'string',
+          name: 'appEmail',
+          message: 'What is your email?',
+          default: 'Email'
+        }
+    ];
 
     this.prompt(prompts, function (answers) {
       this.appName = answers.appName;

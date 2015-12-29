@@ -6,15 +6,17 @@
 	var connect = require('gulp-connect-php');
 	var browserSync = require('browser-sync');
 
-	gulp.task('sass', function () {
-		gulp.src('./scss/**/*.scss')
+	gulp.task('sass:compile', function () {
+		gulp.src('./assets/styles/sass/**/*.scss')
 			.pipe(sass().on('error', sass.logError))
 			.pipe(gulp.dest('./assets/styles/'));
 	});
 
 	gulp.task('sass:watch', function () {
-		gulp.watch('./scss/**/*.scss', ['sass']);
+		gulp.watch('./assets/styles/**/*.scss', ['sass:compile']);
 	});
+
+    gulp.task('sass', ['sass:watch', 'sass:compile']);
 
 	gulp.task('serve', function() {
 		connect.server({}, function (){
@@ -26,5 +28,5 @@
 			browserSync.reload();
 		});
 	});
-	gulp.task('default', ['serve', 'sass:watch']);
+	gulp.task('default', ['serve', 'sass']);
 })();

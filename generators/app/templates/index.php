@@ -18,7 +18,6 @@
 	</head>
 	<body>
 	</body>
-	<script src="bower_components/material-design-lite/material.min.js"></script>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/mustache.js/mustache.min.js"></script>
 	<script src="assets/scripts/main.js"></script>

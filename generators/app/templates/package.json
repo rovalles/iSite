@@ -1,7 +1,7 @@
 {
   "name": "<% appName %>",
   "version": "1.0.0",
-  "description": "```          )          (.)          .|.          l7J          | |      _.--| |--._   .-';  ;`-'& ; `&.  & &  ;  &   ; ;   \\  \\      ;    &   &_/   F\"\"\"---...---\"\"\"J   | | | | | | | | |   J | | | | | | | F    `---.|.|.|.---' ```",
+  "description": "<% appName %>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
