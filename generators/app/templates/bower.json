@@ -1,9 +1,8 @@
 {
-  "name": "victory-bake-shop",
+  "name": "<% appName %>",
   "version": "0.0.0",
-  "homepage": "https://github.com/rovalles/victory-bake-shop",
   "authors": [
-    "Rodolfo Ovalles <ro3014@att.com>"
+    "Rodolfo Ovalles <rovalles0100@gmail.com>"
   ],
   "license": "MIT",
   "ignore": [

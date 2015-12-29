@@ -1,5 +1,5 @@
 {
-  "name": "victory-bake-shop",
+  "name": "<% appName %>",
   "version": "1.0.0",
   "description": "```          )          (.)          .|.          l7J          | |      _.--| |--._   .-';  ;`-'& ; `&.  & &  ;  &   ; ;   \\  \\      ;    &   &_/   F\"\"\"---...---\"\"\"J   | | | | | | | | |   J | | | | | | | F    `---.|.|.|.---' ```",
   "main": "index.js",
@@ -7,15 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rovalles/victory-bake-shop.git"
+    "type": "git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rovalles/victory-bake-shop/issues"
-  },
-  "homepage": "https://github.com/rovalles/victory-bake-shop#readme",
   "devDependencies": {
     "browser-sync": "^2.8.2",
     "gulp": "^3.9.0",
