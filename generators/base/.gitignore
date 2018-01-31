@@ -42,7 +42,6 @@ Thumbs.db
 *.swo
 
 # Project Related
+dist
 node_modules
-generators/*/node_modules
-generators/*/dist
-generators/*/src/assets/*
+

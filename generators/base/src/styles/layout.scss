@@ -2,6 +2,25 @@ body{
   font-family: 'Raleway', sans-serif;
 }
 
+h1{
+  font-weight: bold;
+  a:hover{
+    text-decoration: none;
+  }
+}
+
+.nav-link:hover{
+  text-decoration: underline;
+}
+
 img{
   width: 100%;
+}
+
+.gallery {
+  & > div{
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #666;
+  }
 }
