@@ -8,21 +8,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles/includes.css" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 
     <title>Hello, world!</title>
   </head>
   <body>
     <div class="container-fluid p-5">
-
       <header class="row">
         <div class="col">
           <h1>
             <a href="#">Test</a>
           </h1>
         </div>
-        <div class="col">
-          <nav class="nav justify-content-end">
+        <div class="col justify-content-end d-flex align-items-center">
+          <nav class="nav">
             <a class="nav-link active" href="#">Page 1</a>
             <a class="nav-link" href="#">Page 2</a>
             <a class="nav-link" href="#">Page 2</a>
@@ -48,17 +47,26 @@
         </div>
       </div>
 
+      <div class="row">
+        <div class="col m-5">
+          <blockquote class="blockquote text-center">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+						<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+					</blockquote>
+        </div>
+      </div>
+
       <footer>
         <div class="row">
           <div class="col-2">
-            <span class="font-weight-bold">INFO</span>
+            <strong class="font-weight-bold">INFO</strong>
             <ul class="list-unstyled">
               <li>211 123 4444</li>
               <li>me@test.com</li>
             </ul>
           </div>
           <div class="col-2">
-            <span class="font-weight-bold">SOCIAL</span>
+            <strong>SOCIAL</strong>
             <ul class="list-unstyled">
               <li>Twitter</li>
               <li>Facebook</li>
@@ -71,7 +79,6 @@
           </div>
         </div>
       </footer>
-
     </div>
 
     <!-- Optional JavaScript -->
