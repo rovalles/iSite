@@ -40,6 +40,7 @@ Thumbs.db
 *.bak
 *.swp
 *.swo
+*.psd
 
 # Project Related
 node_modules
