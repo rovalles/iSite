@@ -1,1 +1,3 @@
 node_modules
+generators/*/node_modules
+generators/*/dist
