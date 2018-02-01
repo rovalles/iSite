@@ -1,30 +1,27 @@
 'use strict';
-var yeoman = require('yeoman-generator'),
-    yosay = require('yosay'),
-    exec = require('child_process').exec,
+const yeoman = require('yeoman-generator'),
     async = require('async'),
     chalk = require('chalk');
 
 module.exports = yeoman.generators.Base.extend({
 
   prompting: function () {
-    var done = this.async();
+    const done = this.async();
 
-    // Have Yeoman greet the user.
     console.log(this.yeoman);
 
     var prompts = [
         {
           type: 'string',
-          name: 'appName',
-          message: 'What would you like to call the app?',
-          default: 'myApp'
+          name: 'appTitle',
+          message: 'What would like to title this application?',
+          default: 'My App'
         },
         {
           type: 'string',
-          name: 'projectName',
-          message: 'What would like to title this application?',
-          default: 'App Name'
+          name: 'appName',
+          message: 'What would you like to call the app?',
+          default: 'myApp'
         },
         {
           type: 'string',
@@ -42,7 +39,7 @@ module.exports = yeoman.generators.Base.extend({
 
     this.prompt(prompts, function (answers) {
       this.appName = answers.appName;
-      this.projectName = answers.projectName;
+      this.appTitle = answers.appTitle;
 
       done();
     }.bind(this));
@@ -51,7 +48,10 @@ module.exports = yeoman.generators.Base.extend({
     this.destinationRoot(this.appName);
   },
   writing: function () {
-    this.directory( this.sourceRoot(), this.destinationRoot());
+		this.directory(
+			this.sourceRoot(),
+			this.destinationRoot()
+		);
   },
   install: function () {
     this.installDependencies();
