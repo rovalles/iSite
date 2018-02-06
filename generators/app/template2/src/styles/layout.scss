@@ -1,0 +1,82 @@
+html,
+body,
+.container-fluid{
+  height: 100%;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+
+main{
+  width: 50%;
+}
+
+a{
+  font-weight: normal
+}
+
+h2{
+  text-transform: uppercase;
+  margin: 5px 0;
+  padding: 5px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+
+  span{
+    font-weight: bold;
+    font-size: 80%;
+    margin-right: 5px;
+  }
+}
+
+header{
+  display: flex;
+  align-items: center;
+
+  h1{
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+    margin-right: 20px;
+  }
+}
+
+pre{
+  color: #ddd;
+  font-weight: normal;
+  display: inline-block;
+  font-size: 12px;
+}
+
+header,
+footer{
+  margin-left: 20px;
+}
+
+section{
+  display: flex;
+
+  div{
+    flex: 1;
+    margin: 20px;
+  }
+}
+
+footer{
+  p{
+    margin: 0;
+  }
+
+  a:hover{
+    border-bottom: 1px dashed #ddd;
+  }
+
+  a, p{
+    &:before{
+      content: ' > ';
+      margin-right: 5px;
+      font-weight: bold;
+    }
+  }
+}
